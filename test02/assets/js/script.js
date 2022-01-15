@@ -6,7 +6,7 @@ for (let i = 0; i < images.length; i++) {
   newBlock = document.createElement('div');
   newBlock.classList.add('sliderblock')
   singleImg = document.createElement("img")
-  singleImg.src = '/assets/img/' + images[i];
+  singleImg.src = 'assets/img/' + images[i];
   newBlock.appendChild(singleImg);
   slider.appendChild(newBlock);
 }
