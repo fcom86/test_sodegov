@@ -1,0 +1,8 @@
+.sliderblock {
+    display: flex !important;
+    justify-content: center;
+}
+
+.slick-dots {
+    top: 40px;
+}

@@ -1,0 +1,36 @@
+<!-- В файле script.js массив с изображениями.
+Необходимо, используя js создать из них слайдер с помощью плагина slick
+(документация https://github.com/kenwheeler/slick)
+===
+Файлы перенесены в директорию /assets -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>alexeslm/test02</title>
+    <meta name="description" content="Test JS sodegov">
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+
+<div id="slider" class="fade"></div>
+<script src="assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.fade').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
+    });
+  });
+</script>
+
+</body>
+</html>
